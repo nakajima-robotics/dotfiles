@@ -56,6 +56,7 @@ autocenter_mode = "yes"
 cyclic_scrolling = "no"
 
 # visualizer
+
 startup_slave_screen = "visualizer"
 visualizer_fifo_path = "/home/jmt/.mpd/mpd.fifo"
 visualizer_output_name = "my_fifo"
