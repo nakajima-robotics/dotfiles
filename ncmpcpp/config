@@ -1,0 +1,69 @@
+# rebirth's ncmpcpp config
+# Updated for ncmpcpp 0.8.1
+# March 20, 2018
+
+# mpd options 
+
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_connection_timeout = "5"
+mpd_music_dir = "~/audio/music"
+
+# ncmpcpp directories
+
+ncmpcpp_directory = ~/.ncmpcpp
+lyrics_directory = ~/.ncmpcpp/lyrics
+
+# colors
+
+colors_enabled = "yes"
+main_window_color = 16
+header_window_color = 16
+window_border_color = 16
+active_window_border = 16
+state_line_color = 3
+alternative_ui_separator_color = 3
+current_item_prefix = $(12)$r
+current_item_suffix = $(end)$/r
+current_item_inactive_column_prefix = $(11)$r
+current_item_inactive_column_suffix = $(end)$/r
+progressbar_color = 1
+progressbar_elapsed_color = 4
+volume_color = 11
+# active_column_color = 12 (deprecated)
+empty_tag_color = 3
+discard_colors_if_item_is_selected = "yes"
+
+# layout
+
+user_interface = "alternative"
+alternative_header_first_line_format = $(4)「$(end)$(16)%t$(end)$(4)」$(end)
+alternative_header_second_line_format = $(4)「$(end)%a$(4)」$(end)-$(4)「$(end)%b$(4)」$(end)$(4)($(end)%y$(4))$(end)
+progressbar_look = "─╼─"
+# progressbar_boldness = "no" (deprecated)
+playlist_display_mode = "classic"
+#playlist_separate_albums = "yes"
+media_library_primary_tag = "album_artist"
+song_list_format = "%A - %t"
+now_playing_prefix = "$(12) ▸ "
+now_playing_suffix = $(end)
+selected_item_prefix = ""
+display_bitrate = "no"
+header_visibility = "no"
+statusbar_visibility = "yes"
+titles_visibility = "no"
+autocenter_mode = "yes"
+cyclic_scrolling = "no"
+
+# visualizer
+startup_slave_screen = "visualizer"
+visualizer_fifo_path = "/home/jmt/.mpd/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "10"
+visualizer_in_stereo = "no"
+visualizer_type = "wave"
+# visualizer_sample_multiplier = "2" (deprecated)
+visualizer_look = "▓▓"
+visualizer_color = "3,12,4"
+
+# execute_on_song_change = "scrobjob"
